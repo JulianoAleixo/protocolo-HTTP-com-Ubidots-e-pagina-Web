@@ -9,8 +9,8 @@
 
 function EnviarUbidotsChave() {
   const Http = new XMLHttpRequest();                                              // Constante para o XMLHttpRequest
-  const token = "BBFF-W81XSbPfZcHpD0eXJTJKJ6E6rLsOMI";                            // Token do usuário no Ubidots
-  let url = "https://industrial.api.ubidots.com/api/v1.6/devices/4-variaveis";    // Url do Ubidots
+  const token = "BBFF-******************************";                            // Token do usuário no Ubidots
+  let url = "https://industrial.api.ubidots.com/api/v1.6/devices/SeuDevice";      // Url do Ubidots
   let chave = document.getElementById("estadoChave").value;                       // Valor digitado na página
   var dado = '{"chave":' + chave + '}';                                           // JSON para a chave
   document.getElementById("resposta").innerHTML = "";                             // Limpa o status que está na página
