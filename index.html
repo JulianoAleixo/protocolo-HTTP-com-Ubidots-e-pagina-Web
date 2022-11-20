@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatro Variáveis</title>
+    <h1>Trabalho prático (4 Variáveis)<br><br>Juliano Moreira Aleixo <br>Samuel Henrique Martines de Oliveira<br><br> 
+    Link da dashborard: <br>
+  
+    <a href="https://stem.ubidots.com/app/dashboards/public/dashboard/K37v2p9Du3xoKnR7SV_lMncTZOp7bqAXfACheR7zW44">Dashboard</a> 
+        <br>
+  </h1>
+</head>
+<script src="script.js"> </script>
+<link rel="stylesheet" href="style.css"> 
+
+<body>
+    <div class="block glow">
+        <br>
+    <p>Digite o valor para a <b>CHAVE</b></p>
+    <input id="estadoChave"></input>
+        <br>
+        <br>
+    <div class="outer button">
+    <button onclick="EnviarUbidotsChave()"> ENVIAR </button>
+    <span></span>
+    <span></span>
+    </div>
+        <br>
+        <br>
+    </div>
+    <div class="block glow">
+        <br>
+    <p>Digite o valor para o <b>SENSOR DE PRESSÃO</b></p>
+        
+    <input id="estadoPressao"></input>
+        <br>
+        <br>
+        <div class="outer button">
+            <button onclick="EnviarUbidotsPressao()"> ENVIAR </button>
+            <span></span>
+            <span></span>
+            </div>
+        <br>
+        <br>
+    </div>
+    <div class="block glow">
+        <br>
+    <p>O valor do <b>MOTOR</b> é </p> 
+    <label id="respostaM"></label>
+        <br>
+        <br>
+        <div class="outer button">
+            <button onclick="ReceberUbidotsMotor()"> RECEBER </button>
+            <span></span>
+            <span></span>
+            </div>
+    </div>
+    <div class="block glow">
+        <br>
+    <p>O valor do <b>COMPRESSOR</b> é</p>
+    <label id="respostaC"></label>
+    <br>
+    <label id="respostaCE"></label>
+        <br>
+        <br>
+        <div class="outer button">
+            <button onclick="ReceberUbidotsCompressor()"> RECEBER </button>
+            <span></span>
+            <span></span>
+            </div>
+    </div>
+        <br>
+        <br>
+    <h1 id="resposta" class="link"></h1>
+        <br>
+        <br>
+    <footer>By: Juliano & Samuel</footer>
+        <br>
+        <br>
+</body>
+</html>
